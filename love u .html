@@ -1,0 +1,64 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> love u na pee aum </title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Kodchasan:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    </head>
+    <body> 
+        <div class="main">
+            <div class="a">
+                <img src="https://scontent.fbkk21-1.fna.fbcdn.net/v/t39.30808-6/394205202_2581651755344550_3053464744304680365_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeEGae59JmWNQneWmBW2EqCyU5Z9BpsYqWJTln0GmxipYtd71Evi2GyXZLUrnbZB7-N78uFp9JjzS-LBPfY-2HSo&_nc_ohc=tzdKIYhJStMQ7kNvgHVWCoZ&_nc_oc=AdjJNOSLIUciLg8n3l71wAYN1mh3tpMI8vSuKpOMdeJrZHXxp1Rj9TyQRUODsotg66U&_nc_zt=23&_nc_ht=scontent.fbkk21-1.fna&_nc_gid=Ae0q2JcAL8BiNTwrGQtRL0L&oh=00_AYHQhjrYPpTcBEixfdJqdDmIkTi6O-Rs58DALe0rG_1oew&oe=67D74A29">
+                <h1> hello สวัสดีคั้บสุดหล่อ! ❤ </h1>
+                <p>หนูมีอะไรจะบอกแหละ อยากรู้มั้ย กดตรงนี้ๆ ↓↓ </p>
+                <p class="click" id="clickButton">CLICK</p> 
+            </div>
+
+            <div class="love" ; id="newContent" ; style="display:none;">
+                <h2 >หนูรักพี่มากๆนะะ! </h2>
+                <p> ขอโทษที่เป็นเด็กที่ชอบดื้อ พี่เป็นคนแรกในหลายๆเรื่องเลย ปกติหนูขี้งอนม้ากมาก 
+                    ขี้น้อยใจด้วย แต่พี่ไม่ค่อยทำให้หนูรู้สึกแบบนั้น หนูรักพี่มากมาก อยากใช้ชีวิตอยู่ด้วยยยยย จริงๆ
+                อยู่กับหนูไปนานๆนะอ้วน จุ๊บๆ </p>
+                <img class="imge" ; src="https://i.pinimg.com/736x/9f/fa/3d/9ffa3d91f50fc5bd812a58392d4683e0.jpg">
+                <p> แล้วพี่รักหนูมั้ย ?? ♡♡ </p>
+                <button class="button" ; id="loveButton">รัก</button>
+                <button id="noLoveButton">ไม่รัก</button>
+            </div>
+            <div class="nolove" ;  id="responseNoLove" style="display:none;">
+                <p>จะไม่รักหนูจริงหรออออ </p>
+                <button id="tryAgainButton">คลิ๊กใหม่เลย!!</button>
+                <img class="sad" src="https://i.pinimg.com/736x/ba/9f/2f/ba9f2f307e33cad2b2a32b44ea2ef4da.jpg">
+            </div>
+            <div class="nolove" id="newLoveContent" style="display:none;">
+                <h2>เขินจังเลยที่พี่รักหนู eiei ขอมอบเพลงนี้ให้</h2>
+                <a class="music" href="https://youtu.be/h2VIUdst5y4?si=mYDFNVPE8u1vFPeY">จิ้มๆ</a>
+                <img class="happy" src="https://i.pinimg.com/736x/ee/72/56/ee7256774725a950d23d67976391de66.jpg">
+            </div>
+    
+
+    </body>
+    <script>
+        document.getElementById('clickButton').addEventListener('click', function() {
+            document.querySelector('.a').style.display = 'none';
+            document.getElementById('newContent').style.display = 'block';
+        });
+
+        // เมื่อคลิกปุ่ม "ไม่รัก"
+        document.getElementById('noLoveButton').addEventListener('click', function() {
+            document.getElementById('newContent').style.display = 'none';
+            document.getElementById('responseNoLove').style.display = 'block';
+        });
+        document.getElementById('loveButton').addEventListener('click', function() {
+            document.getElementById('newContent').style.display = 'none';
+            document.getElementById('newLoveContent').style.display = 'block';
+        });
+        document.getElementById('tryAgainButton').addEventListener('click', function() {
+            document.getElementById('responseNoLove').style.display = 'none';
+            document.getElementById('newContent').style.display = 'block';
+        });
+    </script>
+   
+</html>
