@@ -21,9 +21,10 @@ body {
 }
 
 img {
-    width: 500px;
-    padding: 45px;
-    border-radius: 10 px;
+    width: 100px;
+    padding: 20px;
+    border-radius: 10px;
+    height: auto;
 }
 
 .click {
@@ -37,30 +38,40 @@ img {
 }
 
 .imge {
-    width: 500px;
-    padding: 45px;
-    border-radius: 10 px;
+    width: 100px;
+    padding: 20px;
+    border-radius: 10px;
+    height: auto;
 }
 
 .love {
     background-color: rgb(255, 253, 252) ;
     margin: 30px;
-    padding: 20px;
-    border-radius: 10 px;
+    padding: 15px;
+    border-radius: 10px;
+    max-width: 100px;
+    height: auto;
 }
 
 .nolove {
     background-color: rgb(255, 253, 252) ;
     margin: 30px;
-    padding: 20px;
-    border-radius: 10 px;
+    padding: 15px;
+    max-width: 100px;
+    border-radius: 10px;
+    height: auto;
 }
 
 .sad {
-    width: 500px;
-    padding: 45px;
+    max-width: 100px;
+    padding: 20px;
+    height: auto;
 }
-
+.happy {
+    height: auto;
+    max-width: 100px;
+    padding: 20px;
+}
 .botton {
     font-size: 100px;
     background-color: bisque;
